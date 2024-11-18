@@ -1,0 +1,26 @@
+package com.itheima.mp.mapper;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.itheima.mp.domain.po.User;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+public interface UserMapper extends BaseMapper<User> {
+
+    void saveUser(User user);
+
+    void deleteUser(Long id);
+
+    void updateUser(User user);
+
+    User queryUserById(@Param("id") Long id);
+
+    /*
+    自定义sql自动拼接mpsql
+     */
+    List<User> queryUserByIds(@Param("ids") List<Long> ids);
+
+    void updataByid(@Param("ew") QueryWrapper<User> queryWrapper, @Param("amount") int amount);
+}
