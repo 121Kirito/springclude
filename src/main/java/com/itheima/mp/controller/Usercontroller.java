@@ -50,9 +50,9 @@ public class Usercontroller {
     }
 
     @ApiOperation("扣减用户余额接口")
-    @PutMapping("{id}/deduction/{money}")
-    public void deductionMoney(@ApiParam("用户id") @Param("id") Long id,
-                               @ApiParam("扣减金额") @Param("money") Integer money) {
+    @PutMapping("/{id}/deduction/{money}")
+    public void deductionMoney(@ApiParam("用户id") @PathVariable("id") Long id,
+                               @ApiParam("扣减金额") @PathVariable("money") Integer money) {
         userService.deductMoney(id, money);
     }
 }
