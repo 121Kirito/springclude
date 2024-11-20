@@ -2,9 +2,12 @@ package com.itheima.mp.service.Imp;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.itheima.mp.domain.po.User;
+import com.itheima.mp.domain.query.UserQuery;
 import com.itheima.mp.mapper.UserMapper;
 import com.itheima.mp.service.userService;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * 继承ISerivce中的方法
@@ -26,5 +29,15 @@ public class userServiceImp extends ServiceImpl<UserMapper, User> implements use
         }
         //业务代码
         baseMapper.deductBlance(id, money);
+    }
+
+
+    //lambad查询
+    @Override
+    public List<User> listQuery(UserQuery userQuery) {
+        return lambdaQuery().like(userQuery.getName() != null, User::getUsername, userQuery.getName())
+                .eq(userQuery.getStatus() != null, User::getStatus, userQuery.getStatus())
+                .ge(userQuery.getMaxBalance() != null, User::getBalance, userQuery.getMaxBalance())
+                .le(userQuery.getMinBalance() != null, User::getBalance, userQuery.getMinBalance()).list();
     }
 }

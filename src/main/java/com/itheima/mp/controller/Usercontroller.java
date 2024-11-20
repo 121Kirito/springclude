@@ -3,6 +3,7 @@ package com.itheima.mp.controller;
 import cn.hutool.core.bean.BeanUtil;
 import com.itheima.mp.domain.dto.UserFormDTO;
 import com.itheima.mp.domain.po.User;
+import com.itheima.mp.domain.query.UserQuery;
 import com.itheima.mp.domain.vo.UserVO;
 import com.itheima.mp.service.userService;
 import io.swagger.annotations.Api;
@@ -55,4 +56,12 @@ public class Usercontroller {
                                @ApiParam("扣减金额") @PathVariable("money") Integer money) {
         userService.deductMoney(id, money);
     }
+
+    @GetMapping("/list")
+    @ApiOperation("复杂查询")
+    public List<User> selectAll(@RequestBody UserQuery userQuery) {
+        List<User> users = userService.listQuery(userQuery);
+        return users;
+    }
+
 }

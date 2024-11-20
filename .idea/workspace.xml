@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6daa18d6-e39e-4101-8a1d-251a5f177de5" name="更改" comment="初始化提交">
+    <list default="true" id="6daa18d6-e39e-4101-8a1d-251a5f177de5" name="更改" comment="基础业务接口开发完成">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query/UserQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ad4df7b-a996-4bb9-b0c0-5f54b2df777f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7ad4df7b-a996-4bb9-b0c0-5f54b2df777f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/controller/Usercontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/controller/Usercontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/Imp/userServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/Imp/userServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/userService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/controller/Usercontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/controller/Usercontroller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/service/Imp/userServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/service/Imp/userServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/service/userService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/service/userService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2nKpOYcUAF5Jcq5hjyi5KW4uBqA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -80,7 +82,7 @@
     "Spring Boot.MpDemoApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/JavaProject/mp-demo",
+    "last_opened_file_path": "/JavaProject/mp-demo/src/main/java/com/itheima/mp/domain/query",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,7 +91,7 @@
     "project.structure.last.edited": "库",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true",
     "应用程序.MpDemoApplication.executor": "Run",
     "应用程序.StudentManagementSystem.executor": "Run",
@@ -104,6 +106,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query" />
+    </key>
+  </component>
   <component name="RunManager" selected="应用程序.MpDemoApplication">
     <configuration name="MpDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itheima.mp.MpDemoApplication" />
@@ -261,7 +268,10 @@
       <workItem from="1731984024852" duration="20000" />
       <workItem from="1731984336998" duration="21000" />
       <workItem from="1731984374831" duration="637000" />
-      <workItem from="1731985039894" duration="2009000" />
+      <workItem from="1731985039894" duration="2566000" />
+      <workItem from="1732061601314" duration="59000" />
+      <workItem from="1732061675080" duration="5141000" />
+      <workItem from="1732071167982" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="初始化提交">
       <option name="closed" value="true" />
@@ -271,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731947418662</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="基础业务接口开发完成">
+      <option name="closed" value="true" />
+      <created>1731987106243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731987106243</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +301,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="TEXT_FILTER_SETTINGS">
                 <TextFilterSettings>
                   <option name="MATCH_CASE" value="true" />
@@ -296,7 +325,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化提交" />
+    <MESSAGE value="基础业务接口开发完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="基础业务接口开发完成" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
