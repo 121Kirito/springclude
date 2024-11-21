@@ -38,7 +38,8 @@ public class Usercontroller {
 
     @ApiOperation("根据id查询")
     @GetMapping("{id}")
-    public UserVO SelectUser(@ApiParam("用户id") @Param("id") Long id) {
+    public UserVO SelectUser(@ApiParam("用户id") @PathVariable("id") Long id) {
+        System.out.println(id);
         UserVO userVO = userService.queryUserAndAddress(id);
         return userVO;
     }
