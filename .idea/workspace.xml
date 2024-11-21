@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daa18d6-e39e-4101-8a1d-251a5f177de5" name="更改" comment="基础业务接口开发完成">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -270,6 +268,7 @@
       <workItem from="1732157946166" duration="2238000" />
       <workItem from="1732166588628" duration="379000" />
       <workItem from="1732168169601" duration="1574000" />
+      <workItem from="1732188197181" duration="119000" />
     </task>
     <task id="LOCAL-00001" summary="初始化提交">
       <option name="closed" value="true" />
