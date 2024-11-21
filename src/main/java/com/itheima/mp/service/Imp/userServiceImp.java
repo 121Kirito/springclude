@@ -3,6 +3,7 @@ package com.itheima.mp.service.Imp;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.itheima.mp.domain.po.User;
 import com.itheima.mp.domain.query.UserQuery;
+import com.itheima.mp.domain.vo.UserVO;
 import com.itheima.mp.mapper.UserMapper;
 import com.itheima.mp.service.userService;
 import org.springframework.stereotype.Service;
@@ -28,7 +29,11 @@ public class userServiceImp extends ServiceImpl<UserMapper, User> implements use
             throw new RuntimeException("用户余额不足");
         }
         //业务代码
-        baseMapper.deductBlance(id, money);
+        int remianBalance = user.getBalance() - money;
+        lambdaUpdate().set(User::getBalance, remianBalance)
+                .set(remianBalance == 0, User::getStatus, 2)
+                .eq(User::getBalance, user.getBalance())//乐观锁
+                .eq(User::getId, id).update();
     }
 
 
@@ -39,5 +44,12 @@ public class userServiceImp extends ServiceImpl<UserMapper, User> implements use
                 .eq(userQuery.getStatus() != null, User::getStatus, userQuery.getStatus())
                 .ge(userQuery.getMaxBalance() != null, User::getBalance, userQuery.getMaxBalance())
                 .le(userQuery.getMinBalance() != null, User::getBalance, userQuery.getMinBalance()).list();
+    }
+
+    @Override
+    public UserVO queryUserAndAddress(Long id) {
+        User user = getById(id);
+
+        return null;
     }
 }

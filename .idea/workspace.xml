@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daa18d6-e39e-4101-8a1d-251a5f177de5" name="更改" comment="基础业务接口开发完成">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query/UserQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/controller/Usercontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/controller/Usercontroller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/Imp/userServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/Imp/userServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/userService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/controller/Usercontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/controller/Usercontroller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/service/Imp/userServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/service/Imp/userServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/service/userService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/service/userService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,46 +61,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.MpDemoApplicationTests.executor": "Run",
-    "JUnit.UserMapperTest.executor": "Run",
-    "JUnit.UserMapperTest.testSelectById.executor": "Run",
-    "JUnit.UserMapperTest.testqurqure.executor": "Run",
-    "Maven.mp-demo [org.apache.maven.plugins:maven-clean-plugin:3.2.0:help].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "1083",
-    "RequestMappingsPanelWidth1": "1082",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.MpDemoApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/JavaProject/mp-demo/src/main/java/com/itheima/mp/domain/query",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.MpDemoApplication.executor": "Run",
-    "应用程序.StudentManagementSystem.executor": "Run",
-    "应用程序.dome.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.MpDemoApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testSelectById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testqurqure.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mp-demo [org.apache.maven.plugins:maven-clean-plugin:3.2.0:help].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;1083&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;1082&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MpDemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/JavaProject/mp-demo/src/main/java/com/itheima/mp/domain/query&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.MpDemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.StudentManagementSystem.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.dome.executor&quot;: &quot;Run&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query" />
@@ -272,6 +267,8 @@
       <workItem from="1732061601314" duration="59000" />
       <workItem from="1732061675080" duration="5141000" />
       <workItem from="1732071167982" duration="398000" />
+      <workItem from="1732155105997" duration="2320000" />
+      <workItem from="1732157946166" duration="2238000" />
     </task>
     <task id="LOCAL-00001" summary="初始化提交">
       <option name="closed" value="true" />

@@ -39,8 +39,8 @@ public class Usercontroller {
     @ApiOperation("根据id查询")
     @GetMapping("{id}")
     public UserVO SelectUser(@ApiParam("用户id") @Param("id") Long id) {
-        User byId = userService.getById(id);
-        return BeanUtil.copyProperties(byId, UserVO.class);
+        UserVO userVO = userService.queryUserAndAddress(id);
+        return userVO;
     }
 
     @ApiOperation("根据id查询集合")
