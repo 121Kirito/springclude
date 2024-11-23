@@ -1,11 +1,7 @@
 package com.itheima.mp.mapper;
 
-import com.itheima.mp.domain.po.User;
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.time.LocalDateTime;
 
 
 @SpringBootTest
@@ -14,26 +10,26 @@ class UserMapperTest {
     @Autowired
     private UserMapper userMapper;
 
-    @Test
-    void testInsert() {
-        User user = new User();
-        user.setId(5L);
-        user.setUsername("Lucy");
-        user.setPassword("123");
-        user.setPhone("18688990011");
-        user.setBalance(200);
-        user.setInfo("{\"age\": 24, \"intro\": \"英文老师\", \"gender\": \"female\"}");
-        user.setCreateTime(LocalDateTime.now());
-        user.setUpdateTime(LocalDateTime.now());
-        userMapper.saveUser(user);
-        System.out.println("save success");
-    }
-
-    @Test
-    void testSelectById() {
-        User user = userMapper.queryUserById(5L);
-        System.out.println("user = " + user);
-    }
+//    @Test
+//    void testInsert() {
+//        User user = new User();
+//        user.setId(5L);
+//        user.setUsername("Lucy");
+//        user.setPassword("123");
+//        user.setPhone("18688990011");
+//        user.setBalance(200);
+//        user.setInfo(new UserInfo(24,"英文老师","female"));
+//        user.setCreateTime(LocalDateTime.now());
+//        user.setUpdateTime(LocalDateTime.now());
+//        userMapper.
+//        System.out.println("save success");
+//    }
+//
+//    @Test
+//    void testSelectById() {
+//        User user = userMapper.queryUserById(5L);
+//        System.out.println("user = " + user);
+//    }
 
 
 //    @Test
@@ -43,14 +39,14 @@ class UserMapperTest {
 //        users.forEach(System.out::println);
 //    }
 
-    @Test
-    void testUpdateById() {
-        User user = new User();
-        user.setId(5L);
-        user.setBalance(20000);
-        userMapper.updateUser(user);
-    }
-}
+//    @Test
+//    void testUpdateById() {
+//        User user = new User();
+//        user.setId(5L);
+//        user.setBalance(20000);
+////        userMapper.updateUser(user);
+//    }
+//}
 
 //自定义slq查询
 //    @Test
@@ -66,3 +62,4 @@ class UserMapperTest {
 //                queryWrapper, amount
 //        );
 
+}

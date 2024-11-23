@@ -1,5 +1,6 @@
 package com.itheima.mp.domain.query;
 
+import com.itheima.mp.neums.UserStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -10,7 +11,7 @@ public class UserQuery {
     @ApiModelProperty("用户名关键字")
     private String name;
     @ApiModelProperty("用户状态：1-正常，2-冻结")
-    private Integer status;
+    private UserStatus status;
     @ApiModelProperty("余额最小值")
     private Integer minBalance;
     @ApiModelProperty("余额最大值")

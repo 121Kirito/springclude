@@ -9,6 +9,7 @@ import com.itheima.mp.domain.query.UserQuery;
 import com.itheima.mp.domain.vo.AddressVO;
 import com.itheima.mp.domain.vo.UserVO;
 import com.itheima.mp.mapper.UserMapper;
+import com.itheima.mp.neums.UserStatus;
 import com.itheima.mp.service.userService;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,7 @@ public class userServiceImp extends ServiceImpl<UserMapper, User> implements use
         User user = getById(id);
         System.out.println(user);
         //检查用户状态
-        if (user == null || user.getStatus() == 2) {
+        if (user == null || user.getStatus() == UserStatus.FREEZE) {
             throw new RuntimeException("用户状态异常");
         }
         //检查用户余额
@@ -35,7 +36,7 @@ public class userServiceImp extends ServiceImpl<UserMapper, User> implements use
         //业务代码
         int remianBalance = user.getBalance() - money;
         lambdaUpdate().set(User::getBalance, remianBalance)
-                .set(remianBalance == 0, User::getStatus, 2)
+                .set(remianBalance == 0, User::getStatus, UserStatus.FREEZE)
                 .eq(User::getBalance, user.getBalance())//乐观锁
                 .eq(User::getId, id).update();
     }
@@ -51,6 +52,7 @@ public class userServiceImp extends ServiceImpl<UserMapper, User> implements use
     }
 
     public UserVO queryUserAndAddress(Long id) {
+        System.out.println(id);
         User user = getById(id);
         UserVO userVO = BeanUtil.copyProperties(user, UserVO.class);
         List<Address> list = Db.lambdaQuery(Address.class).eq(Address::getUserId, id).list();

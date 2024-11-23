@@ -1,13 +1,19 @@
 package com.itheima.mp.domain.vo;
 
+import com.itheima.mp.domain.po.UserInfo;
+import com.itheima.mp.neums.UserStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
 @ApiModel(description = "用户VO实体")
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserVO {
 
     @ApiModelProperty("用户id")
@@ -17,10 +23,10 @@ public class UserVO {
     private String username;
 
     @ApiModelProperty("详细信息")
-    private String info;
+    private UserInfo info;
 
     @ApiModelProperty("使用状态（1正常 2冻结）")
-    private Integer status;
+    private UserStatus status;
 
     @ApiModelProperty("账户余额")
     private Integer balance;
