@@ -1,8 +1,11 @@
 package com.itheima.mp.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.core.metadata.OrderItem;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.baomidou.mybatisplus.extension.toolkit.Db;
+import com.itheima.mp.domain.dto.PageDTO;
 import com.itheima.mp.domain.po.Address;
 import com.itheima.mp.domain.po.User;
 import com.itheima.mp.domain.query.UserQuery;
@@ -60,5 +63,32 @@ public class userServiceImp extends ServiceImpl<UserMapper, User> implements use
             userVO.setAddress(BeanUtil.copyToList(list, AddressVO.class));
         }
         return userVO;
+    }
+
+    @Override
+    public PageDTO<UserVO> userPageQuery(UserQuery pageQurey) {
+        //构建查询条件
+        Page<User> page = Page.of(pageQurey.pageNo, pageQurey.PageSie);
+        //排序
+        if (!pageQurey.getSortBy().isEmpty()) {
+            //不空
+            page.addOrder(new OrderItem(pageQurey.getSortBy(), pageQurey.getIsAsc()));
+        } else {
+            //为空默认按照更新时间排序
+            page.addOrder(new OrderItem("update_time", false));
+        }
+        //查询数据
+        Page<User> userPage = lambdaQuery().like(pageQurey.getName() != null, User::getUsername, pageQurey.getName())
+                .eq(pageQurey.getStatus() != null, User::getStatus, pageQurey.getStatus()).page(page);
+        //封装返回实体
+        PageDTO<UserVO> userVOPageDTO = new PageDTO<UserVO>();
+        userVOPageDTO.setTotal(userPage.getTotal());
+        userVOPageDTO.setPages(userPage.getPages());
+        if (userPage.getRecords().size() <= 0) {
+            return userVOPageDTO;
+        }
+        List<UserVO> userVOS = BeanUtil.copyToList(userPage.getRecords(), UserVO.class);
+        userVOPageDTO.setList(userVOS);
+        return userVOPageDTO;
     }
 }

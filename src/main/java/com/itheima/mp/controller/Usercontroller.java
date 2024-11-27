@@ -1,6 +1,7 @@
 package com.itheima.mp.controller;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.itheima.mp.domain.dto.PageDTO;
 import com.itheima.mp.domain.dto.UserFormDTO;
 import com.itheima.mp.domain.po.User;
 import com.itheima.mp.domain.query.UserQuery;
@@ -65,4 +66,9 @@ public class Usercontroller {
         return users;
     }
 
+    @GetMapping("/page")
+    @ApiOperation("分页查询")
+    public PageDTO<UserVO> selectPage(@RequestBody UserQuery pageQurey) {
+        return userService.userPageQuery(pageQurey);
+    }
 }

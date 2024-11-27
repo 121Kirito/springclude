@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6daa18d6-e39e-4101-8a1d-251a5f177de5" name="更改" comment="基础业务接口开发完成">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/dto/PageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query/pageQurey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/controller/Usercontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/controller/Usercontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query/UserQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query/UserQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/impl/userServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/impl/userServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/userService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/domain/dto/UserFormDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/domain/dto/UserFormDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/domain/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/domain/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/domain/query/UserQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/domain/query/UserQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/domain/vo/UserVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/domain/vo/UserVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/mp/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/mp/mapper/UserMapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,52 +70,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.MpDemoApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserMapperTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserMapperTest.testSelectById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserMapperTest.testqurqure.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.mp-demo [org.apache.maven.plugins:maven-clean-plugin:3.2.0:help].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;1083&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;1082&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MpDemoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/JavaProject/mp-demo/src/main/java/com/itheima/mp/domain/query&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.MpDemoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.StudentManagementSystem.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.dome.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MpDemoApplicationTests.executor": "Run",
+    "JUnit.UserMapperTest.executor": "Run",
+    "JUnit.UserMapperTest.testSelectById.executor": "Run",
+    "JUnit.UserMapperTest.testqurqure.executor": "Run",
+    "Maven.mp-demo [org.apache.maven.plugins:maven-clean-plugin:3.2.0:help].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.MpDemoApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/JavaProject/mp-demo/src/main/java/com/itheima/mp/domain/query",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.MpDemoApplication.executor": "Run",
+    "应用程序.StudentManagementSystem.executor": "Run",
+    "应用程序.dome.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.MpDemoApplication">
+  <component name="RunManager" selected="Spring Boot.MpDemoApplication">
     <configuration name="MpDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itheima.mp.MpDemoApplication" />
       <module name="mp-demo" />
@@ -269,6 +281,9 @@
       <workItem from="1732166588628" duration="379000" />
       <workItem from="1732168169601" duration="1574000" />
       <workItem from="1732188197181" duration="119000" />
+      <workItem from="1732336242422" duration="345000" />
+      <workItem from="1732514206286" duration="685000" />
+      <workItem from="1732666413751" duration="6502000" />
     </task>
     <task id="LOCAL-00001" summary="初始化提交">
       <option name="closed" value="true" />
@@ -286,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731987106243</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="基础业务接口开发完成">
+      <option name="closed" value="true" />
+      <created>1732336342756</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732336342756</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
