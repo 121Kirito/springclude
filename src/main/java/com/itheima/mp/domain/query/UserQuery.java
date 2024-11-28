@@ -3,12 +3,16 @@ package com.itheima.mp.domain.query;
 import com.itheima.mp.neums.UserStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @Data
 @ApiModel(description = "用户查询条件实体")
 @EqualsAndHashCode(callSuper = true)
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserQuery extends pageQurey {
     @ApiModelProperty("用户名关键字")
     private String name;
@@ -18,4 +22,6 @@ public class UserQuery extends pageQurey {
     private Integer minBalance;
     @ApiModelProperty("余额最大值")
     private Integer maxBalance;
+
+
 }

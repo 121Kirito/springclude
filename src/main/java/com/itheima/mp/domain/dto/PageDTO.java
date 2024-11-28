@@ -9,7 +9,6 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class PageDTO<T> {
     public Long total;
     public Long Pages;
