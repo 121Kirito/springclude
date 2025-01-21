@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MpDemoApplication {
 
+    //模拟git
     public static void main(String[] args) {
         SpringApplication.run(MpDemoApplication.class, args);
     }
